@@ -12,9 +12,7 @@ function App() {
         <NavBar></NavBar>
       </GridItem>
       <Show above="lg">
-        <GridItem area="aside" bg="blue">
-          Nav
-        </GridItem>
+        <GridItem area="aside">Aside</GridItem>
       </Show>
       <GridItem area="main">
         <GameGrid></GameGrid>
