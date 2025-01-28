@@ -25,7 +25,7 @@ const GameCard = ({ game }: Props) => {
           <Emoji rating={game.rating_top}></Emoji>
         </Heading>
       </CardBody>
-    </Card>
+    </Card> 
   );
 };
 

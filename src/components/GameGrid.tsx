@@ -34,11 +34,13 @@ const GameGrid = () => {
             ))}
           {data?.pages.map((page, index) => (
             <React.Fragment key={index}>
-              {page.results.map((game) => (
-                <GameCardContainer key={game.id}>
-                  <GameCard game={game}></GameCard>
-                </GameCardContainer>
-              ))}
+              {page.results
+                .filter((game) => game.metacritic > 0)
+                .map((game) => (
+                  <GameCardContainer key={game.id}>
+                    <GameCard game={game}></GameCard>
+                  </GameCardContainer>
+                ))}
             </React.Fragment>
           ))}
         </SimpleGrid>
